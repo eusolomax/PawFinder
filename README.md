@@ -13,7 +13,7 @@ PawFinder é um aplicativo web e futuramente para mobile inovador que permite ao
 ## Tecnologias Utilizadas
 
 - Vue.js
-- Bun.js
+- Node.js
 - Shadcn/ui
 
 ## Instalação
