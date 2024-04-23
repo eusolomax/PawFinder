@@ -1,6 +1,6 @@
 # PawFinder
 
-PawFinder é um aplicativo web e futuramente para mobile inovador que permite aos usuários tirar fotos de animais de em situação de rua, compartilhá-las em um mapa online e ajudar a reunir animais perdidos com os usuários, seus donos ou facilitar a adoção de animais encontrados.
+PawFinder é um aplicativo web e futuramente para mobile inovador que permite aos usuários tirar fotos de animais em situação de rua, compartilhá-las em um mapa online e ajudar a reunir animais perdidos com os usuários, seus donos ou facilitar a adoção de animais encontrados.
 
 ## Funcionalidades Principais
 
