@@ -20,8 +20,8 @@ PawFinder é um aplicativo web e futuramente para mobile inovador que permite ao
 
 1. Clone o repositório: `git clone https://github.com/eusolomax/PawFinder.git`
 2. Entre no diretório do projeto: `cd pawfinder`
-3. Instale as dependências: `bun i`
-4. Inicie o servidor de desenvolvimento: `bun dev`
+3. Instale as dependências: `npm i`
+4. Inicie o servidor de desenvolvimento: `npm run dev`
 5. Acesse o aplicativo em seu navegador: `http://localhost:5173`
 
 ## Contribuição
