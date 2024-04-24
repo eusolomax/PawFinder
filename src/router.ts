@@ -7,7 +7,7 @@ const routes = [
     name: 'base',
     children: [
       {
-        path: '',
+        path: '/',
         component: () => import('@/components/Home.vue'),
         name: 'home',
       },
@@ -17,12 +17,6 @@ const routes = [
         component: () => import('@/components/PageNotFound.vue'),
         name: 'pageNotFound',
       }
-
-      // {
-      //   path: 'login',
-      //   component: () => import('@/views/Login.vue'),
-      //   name: 'login',
-      // }
     ]
   }
 ]
