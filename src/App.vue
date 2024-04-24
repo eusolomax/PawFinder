@@ -1,7 +1,7 @@
-<script setup lang="ts">
-</script>
-
 <template>
+  <Base />
 </template>
 
-<style scoped></style>
+<script setup lang="ts">
+import Base from './views/Base.vue';
+</script>
