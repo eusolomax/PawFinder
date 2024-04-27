@@ -1,30 +1,44 @@
 # PawFinder
 
-PawFinder é um aplicativo web e futuramente para mobile inovador que permite aos usuários tirar fotos de animais em situação de rua, compartilhá-las em um mapa online e ajudar a reunir animais perdidos com os usuários, seus donos ou facilitar a adoção de animais encontrados.
+PawFinder is an innovative web and (future) mobile application that allows users to take photos of animals in street situations, share them on an online map, and help reunite lost animals with their owners or facilitate the adoption of found animals.
 
-## Funcionalidades Principais
+## Key Features
 
-- **Tire Fotos de Animais de Rua**: Tire fotos dos animais que você encontra na rua diretamente do seu smartphone ou faça o upload.
-- **Compartilhe no Mapa Online**: Compartilhe as fotos dos animais em um mapa online para que outros usuários possam visualizá-las e ter a ultima localização do animal.
-- **Busca e Filtragem Avançadas**: Busque e filtre os animais por tipo, localização e outras características.
-- **Perfil dos Animais**: Visualize a postagem detalhada do animal, incluindo descrição, espécie, raça, idade, saúde, etc...
-- **Adoção Responsável**: Encontre animais disponíveis para adoção e entre em contato com os abrigos de animais diretamente.
+- **Take Photos of Street Animals**: Take photos of animals you encounter on the street directly from your smartphone or upload them.
+- **Share on Online Map**: Share the photos of animals on an online map so that other users can view them and have the latest location of the animal.
+- **Advanced Search and Filtering**: Search and filter animals by type, location, and other characteristics.
+- **Animal Profiles**: View detailed postings of animals, including description, species, breed, age, health, etc...
+- **Responsible Adoption**: Find animals available for adoption and contact animal shelters directly.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
+### Frameworks
 - Vue.js
 - Node.js
 - Express.js
+
+### Core Packages
 - Vuetify
+- Nodemon
 
-## Instalação
+### Tools
+- PostgreSQL
+- Insomnia
 
-1. Clone o repositório: `git clone https://github.com/eusolomax/PawFinder.git`
-2. Entre no diretório do projeto: `cd pawfinder`
-3. Instale as dependências: `npm i`
-4. Inicie o servidor de desenvolvimento: `npm run dev`
-5. Acesse o aplicativo em seu navegador: `http://localhost:5173`
+## Installation
+1. Clone the repository: `git clone https://github.com/eusolomax/PawFinder.git`
+2. Navigate to the project directory: `cd pawfinder`
 
-## Contribuição
+### Front-End
+1. Install dependencies: `npm i`
+2. Start the development server: `npm run dev`
+3. Access the application in your browser: `http://localhost:5173`
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue para discutir novas funcionalidades ou enviar um pull request com melhorias no código.
+### Back-End
+1. Navigate to the project directory: `cd backend`
+2. Install dependencies: `npm i`
+3. Start the development server: `npm run server`
+
+## Contribution
+
+Contributions are welcome! Feel free to open an issue to discuss new features or submit a pull request with improvements to the code.
