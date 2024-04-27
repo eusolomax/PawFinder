@@ -18,6 +18,10 @@ const routes = [
         name: 'pageNotFound',
       }
     ]
+  },
+  {
+    path: '/home',
+    redirect: '/'
   }
 ]
 
