@@ -21,9 +21,11 @@ PawFinder is an innovative web and (future) mobile application that allows users
 - Vuetify
 - Nodemon
 
-### Tools
-- PostgreSQL
+### External Tools
 - Insomnia
+
+### Database
+- PostgreSQL
 
 ## Installation
 1. Clone the repository: `git clone https://github.com/eusolomax/PawFinder.git`
