@@ -23,6 +23,7 @@ PawFinder is an innovative web and (future) mobile application that allows users
 
 ### External Tools
 - Insomnia
+- DBeaver
 
 ### Database
 - PostgreSQL
