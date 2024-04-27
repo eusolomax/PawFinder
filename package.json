@@ -12,6 +12,7 @@
     "@radix-icons/vue": "^1.0.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "dotenv": "^16.4.5",
     "radix-vue": "^1.7.2",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
