@@ -1,7 +1,6 @@
 <template>
-  <Base />
+  <router-view></router-view>
 </template>
 
 <script setup lang="ts">
-import Base from './views/Base.vue';
 </script>
