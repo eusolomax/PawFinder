@@ -8,11 +8,22 @@ myDataSource.initialize()
   .then(() => { console.log("Data Source running!") })
   .catch((err) => { console.error("Data Source ERROR:", err) })
 
+
 app.get("/", async function (req: Request, res: Response) {
-  res.send('Its working!')
+  res.send("If you are seeing this, it's working! =)")
 })
 
-app.use(express.json())
+app.get("/test/:content", getMiddleware, getController)
+
+async function getController(req: Request, res: Response) {
+  res.send(`Working! I've got ${req.params.content} from you.`)
+}
+
+async function getMiddleware(req: Request, res: Response, next: express.NextFunction) {
+  console.log('Passing middleware')
+  next()
+}
 
 // start express server
-app.listen(port)
+app.listen(port, () => { console.log(`Server is up and running! Listening on port ${port}`) })
+app.use(express.json())
