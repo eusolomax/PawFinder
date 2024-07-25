@@ -4,10 +4,13 @@ import { User } from "../../entities/User";
 
 export async function createUserController(req: Request, res: Response) {
   const { username, email, password } = req.body;
-  if (!username || !email || !password) { return res.status(400) }
-
   const userRepository = myDataSource.getRepository(User)
+  const findUser = await userRepository.find({ where: { email } })
   const user = new User()
+
+  //Checks
+  if (!username || !email || !password) { return res.status(400).send('Missing necessary fields.') }
+  if (findUser.length !== 0) { return res.status(400).send('Email already registered.') }
 
   user.email = email
   user.username = username
@@ -15,5 +18,5 @@ export async function createUserController(req: Request, res: Response) {
 
   userRepository.save(user)
 
-  return res.status(201).send("Usuário criado com sucesso");
+  return res.status(201).send("User registered successfully!");
 }
