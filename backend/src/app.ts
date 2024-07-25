@@ -1,29 +1,19 @@
 import * as express from "express"
-import { Request, Response } from "express"
 import { myDataSource } from "./data-source"
+import { Request, Response } from "express"
+import { createUserController } from "./Controllers/user/createUserController"
+
 const port = 8080
 const app = express()
 
+// start data source
 myDataSource.initialize()
-  .then(() => { console.log("Data Source running!") })
-  .catch((err) => { console.error("Data Source ERROR:", err) })
-
-
-app.get("/", async function (req: Request, res: Response) {
-  res.send("If you are seeing this, it's working! =)")
-})
-
-app.get("/test/:content", getMiddleware, getController)
-
-async function getController(req: Request, res: Response) {
-  res.send(`Working! I've got ${req.params.content} from you.`)
-}
-
-async function getMiddleware(req: Request, res: Response, next: express.NextFunction) {
-  console.log('Passing middleware')
-  next()
-}
+  .then(() => { console.log("Data source | Synced & Running!") })
+  .catch((err) => { console.error("Data Source | ERROR: ", err) })
 
 // start express server
-app.listen(port, () => { console.log(`Server is up and running! Listening on port ${port}`) })
+app.listen(port, () => { console.log(`Backend server | Up & Running! ${port}`) })
 app.use(express.json())
+
+app.get("/", async function (req: Request, res: Response) { res.send("If you are seeing this, it's working! =)") })
+app.post("/createUser", createUserController)
