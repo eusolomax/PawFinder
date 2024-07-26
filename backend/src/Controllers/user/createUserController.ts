@@ -1,6 +1,6 @@
 import { Request, Response } from "express"
-import { myDataSource } from "../../data-source";
-import { User } from "../../entities/User";
+import { myDataSource } from "@/data-source";
+import { User } from "@/entities/User";
 
 export async function createUserController(req: Request, res: Response) {
   const { username, email, password } = req.body;

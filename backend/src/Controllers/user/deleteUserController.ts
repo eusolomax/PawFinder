@@ -1,17 +1,19 @@
 import { Request, Response } from "express"
-import { myDataSource } from "../../data-source";
-import { User } from "../../entities/User";
+import { myDataSource } from "@/data-source";
+import { User } from "@/entities/User";
 
 export async function deleteUserController(req: Request, res: Response) {
-  const { email } = req.body;
+  const { id } = req.body;
+  if (typeof id != 'number') { return res.status(400).send('Invalid user ID.') }
+
   const userRepository = myDataSource.getRepository(User)
-  const findUser = await userRepository.find({ where: { email } })
+  const findUser = await userRepository.find({ where: { id } })
 
   console.log(findUser)
 
   //Checks
-  if (!email) { return res.status(400).send('Missing email field.') }
-  if (findUser.length === 0) { return res.status(400).send('Email not registered.') }
+  if (!id) { return res.status(400).send('Missing ID field.') }
+  if (findUser.length === 0) { return res.status(400).send('ID not registered.') }
 
   userRepository.delete(findUser[0])
 

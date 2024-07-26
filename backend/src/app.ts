@@ -1,9 +1,9 @@
 import * as express from "express"
-import { myDataSource } from "./data-source"
+import { myDataSource } from "@/data-source"
 import { Request, Response } from "express"
-import { createUserController } from "./Controllers/user/createUserController"
-import { deleteUserController } from "./Controllers/user/deleteUserController"
-import { updateUserController } from "./Controllers/user/updateUserController"
+import { createUserController } from "@/Controllers/user/createUserController"
+import { deleteUserController } from "@/Controllers/user/deleteUserController"
+import { updateUserController } from "@/Controllers/user/updateUserController"
 
 const port = 8080
 const app = express()

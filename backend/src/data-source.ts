@@ -3,7 +3,7 @@ require('dotenv').config()
 import { DataSource } from "typeorm"
 
 //Entities
-import { User } from "./entities/User"
+import { User } from "@/entities/User"
 
 export const myDataSource = new DataSource({
   type: "postgres",
