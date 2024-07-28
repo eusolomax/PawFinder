@@ -14,12 +14,9 @@ export class User {
     @Column()
     password: string
 
-    // @CreateDateColumn()
-    // createdAt: Date;
+    @CreateDateColumn()
+    createdAt: Date;
 
-    // @UpdateDateColumn()
-    // updatedAt: Date;
-
-    // @DeleteDateColumn()
-    // deletedAt: Date;
+    @UpdateDateColumn()
+    updatedAt: Date;
 }
